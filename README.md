@@ -17,11 +17,15 @@ The data comes from CrowdFlower via [data.world](https://data.world/crowdflower/
 ## EDA and Feature Engineering
 Created a column to identify whether the tweet was about Apple, Google or neither. Duplicated tweets, tweets for which there is no sentiment label and tweets that were neither about Apple or Google were dropped. Created another column to convert text sentiment into a numerical where 0 is for negative, 1 for neutral and 2 for positive sentiment. The cleaned data was then split into apple and google dataframes. These were then split into train (60% of data) and test (40%) dataframes where the three classification ratios for sentiment were split proportionally.  The trained datasets for apple and google were combined into a single dataframe to be used for model training. The tweet text was then processed for natural language processing(NLP) as described in nlp_doc_preparer function.<br>
 
-<img src="images/apple_sentiment.png"><br>
-<img src="images/google_sentiment.png"><br>
+<img src="images/apple_sentiment.png">
+<img src="images/google_sentiment.png">
 
 ## Model Training and Model Prediction
 Used CountVectorizer (and to lesser extent TfidfVectorizer) to convert text tweet into matrix of tokens.  The models were trained and validated with the combined train dataframe from apple and google tweets. Used pipes to minimize redundant code an gridsearchcv for model tuning and validation. Model predictions were made with apple and google test dataframes.<br>
+
+Confusion Matrix with Base Model<br>
+<img src="images/BM_Apple.png"><br>
+<img src="images/BM_Google.png"><br>
 
 
 ## Conclusion
