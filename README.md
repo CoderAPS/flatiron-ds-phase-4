@@ -24,9 +24,10 @@ Created a column to identify whether the tweet was about Apple, Google or neithe
 Used CountVectorizer (and to lesser extent TfidfVectorizer) to convert text tweet into matrix of tokens.  The models were trained and validated with the combined train dataframe from apple and google tweets. Used pipes to minimize redundant code an gridsearchcv for model tuning and validation. Model predictions were made with apple and google test dataframes.<br>
 
 Confusion Matrix with Base Model<br>
-
-![alt](img src="images/BM_Apple.png") | ![alt](img src="images/BM_Google.png")
-
+<table><tr>
+<td> <img src="images/BM_Apple.png" alt="Drawing" style="width: 250px;"/> </td>
+<td> <img src="images/BM_Google.png" alt="Drawing" style="width: 250px;"/> </td>
+</tr></table>
 
 
 ## Conclusion
