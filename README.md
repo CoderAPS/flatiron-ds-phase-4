@@ -25,8 +25,8 @@ Used CountVectorizer (and to lesser extent TfidfVectorizer) to convert text twee
 
 Confusion Matrix with Base Model<br>
 <table><tr>
-<td> <img src="images/BM_Apple.png" alt="BM_Apple" style="width: 200px;"/> </td>
-<td> <img src="images/BM_Google.png" alt="BM_Google" style="width: 200px;"/> </td>
+<td> <img src="images/BM_Apple.png" alt="BM_Apple" /></td>
+<td> <img src="images/BM_Google.png" alt="BM_Google" /></td>
 </tr></table>
 
 
